@@ -90,3 +90,9 @@ C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Areas\Prod
 C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Areas\ProductManage\Views\_ViewStart.cshtml.g.cs
 C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Areas\Database\Views\DbManage\DeleteDb.cshtml.g.cs
 C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Views\Shared\_MenuManagePartial.cshtml.g.cs
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Areas\Contact\Views\Contact\Delete.cshtml.g.cs
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Areas\Contact\Views\Contact\Details.cshtml.g.cs
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Areas\Contact\Views\Contact\Index.cshtml.g.cs
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Areas\Contact\Views\Contact\SendContact.cshtml.g.cs
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Areas\Contact\Views\_ViewImports.cshtml.g.cs
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Areas\Contact\Views\_ViewStart.cshtml.g.cs
