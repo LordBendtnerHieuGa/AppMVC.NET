@@ -96,3 +96,17 @@ C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Areas\Cont
 C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Areas\Contact\Views\Contact\SendContact.cshtml.g.cs
 C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Areas\Contact\Views\_ViewImports.cshtml.g.cs
 C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Areas\Contact\Views\_ViewStart.cshtml.g.cs
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\AppMvcNet.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\bin\Debug\net5.0\AppMvcNet.StaticWebAssets.xml
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.Facebook.dll
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.Google.dll
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.MicrosoftAccount.dll
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll

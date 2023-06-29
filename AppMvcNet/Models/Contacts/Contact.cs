@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace AppMvcNet.Models.Contact
+namespace AppMvcNet.Models.Contacts
 {
     public class Contact
     {
