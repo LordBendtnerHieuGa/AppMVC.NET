@@ -1,6 +1,8 @@
+using App.ExtendMethods;
 using AppMvcNet.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.Extensions.Configuration;
@@ -38,12 +40,16 @@ namespace AppMvcNet
                 // {1} -> ten Controller
                 // {2} -> ten Area
                 options.ViewLocationFormats.Add("/MyView/{1}/{0}" + RazorViewEngine.ViewExtension);
+
+                options.AreaViewLocationFormats.Add("/MyAreas/{2}/Views/{1}/{0}.cshtml");
+
             });
 
             // services.AddSingleton<ProductService>();
             // services.AddSingleton<ProductService, ProductService>();
             // services.AddSingleton(typeof(ProductService));
             services.AddSingleton(typeof(ProductService), typeof(ProductService));
+            services.AddSingleton<PlanetService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,6 +57,7 @@ namespace AppMvcNet
         {
             if (env.IsDevelopment())
             {
+
                 app.UseDeveloperExceptionPage();
             }
             else
@@ -62,6 +69,9 @@ namespace AppMvcNet
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
+
+            app.AddStatusCodePage(); // Tuy bien Response loi: 400 - 599
+
             app.UseRouting();        // EndpointRoutingMiddleware
 
             app.UseAuthentication(); // xac dinh danh tinh 
@@ -69,16 +79,40 @@ namespace AppMvcNet
 
             app.UseEndpoints(endpoints =>
             {
+                // /sayhi
+                endpoints.MapGet("/sayhi", async (context) => {
+                    await context.Response.WriteAsync($"Hello ASP.NET MVC {DateTime.Now}");
+                });
 
-                // URL: /{controller}/{action}/{id?}
-                // First/Index
+
+                endpoints.MapControllers();
+
+                endpoints.MapControllerRoute(
+                    name: "first",
+                    pattern: "{url:regex(^((xemsanpham)|(viewproduct))$)}/{id:range(2,4)}",
+                    defaults: new
+                    {
+                        controller = "First",
+                        action = "ViewProduct"
+                    }
+
+                );
+
+                endpoints.MapAreaControllerRoute(
+                    name: "product",
+                    pattern: "/{controller}/{action=Index}/{id?}",
+                    areaName: "ProductManage"
+                );
+
+                // Controller khong co Area
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
-
+                    pattern: "/{controller=Home}/{action=Index}/{id?}"
+                );
 
                 endpoints.MapRazorPages();
             });
         }
     }
 }
+
