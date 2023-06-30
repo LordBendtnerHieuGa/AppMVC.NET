@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Builder;
 
-namespace App.ExtendMethods
+namespace AppMvcNet.ExtendMethods
 {
     public static class AppExtends
     {

@@ -1,4 +1,4 @@
-﻿using App.ExtendMethods;
+﻿
 using AppMvcNet.Models;
 using AppMvcNet.Services;
 using Microsoft.AspNetCore.Builder;
@@ -20,6 +20,8 @@ using Microsoft.AspNetCore.Mvc.ViewEngines;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.AspNetCore.Routing.Constraints;
 using Microsoft.Extensions.Logging;
+using AppMvcNet.ExtendMethods;
+using AppMvcNet.Data;
 
 namespace AppMvcNet
 {
@@ -40,6 +42,10 @@ namespace AppMvcNet
             services.AddDbContext<AppDbContext>(options => {
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnect"));
             });
+            services.AddOptions();
+            var mailsetting = Configuration.GetSection("MailSettings");
+            services.Configure<MailSettings>(mailsetting);
+            services.AddSingleton<IEmailSender, SendMailService>();
 
             services.AddControllersWithViews();
             services.AddRazorPages();
@@ -115,6 +121,15 @@ namespace AppMvcNet
                     // .AddTwitter()
                     // .AddMicrosoftAccount()
                     ;
+
+            services.AddSingleton<IdentityErrorDescriber, AppIdentityErrorDescriber>();
+
+            services.AddAuthorization(options => {
+                options.AddPolicy("ViewManageMenu", builder => {
+                    builder.RequireAuthenticatedUser();
+                    builder.RequireRole(RoleName.Administrator);
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
