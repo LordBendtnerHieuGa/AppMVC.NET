@@ -46,5 +46,9 @@ namespace AppMvcNet.Utilities
       }
     }
 
-  }
+        internal static object GenerateSlug(object title)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

@@ -164,3 +164,9 @@ C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Areas\Blog
 C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Areas\Blog\Views\Category\Index.cshtml.g.cs
 C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Areas\Blog\Views\_ViewImports.cshtml.g.cs
 C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Areas\Blog\Views\_ViewStart.cshtml.g.cs
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Areas\Blog\Views\Post\Create.cshtml.g.cs
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Areas\Blog\Views\Post\Delete.cshtml.g.cs
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Areas\Blog\Views\Post\Details.cshtml.g.cs
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Areas\Blog\Views\Post\Edit.cshtml.g.cs
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Areas\Blog\Views\Post\Index.cshtml.g.cs
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\bin\Debug\net5.0\Bogus.dll

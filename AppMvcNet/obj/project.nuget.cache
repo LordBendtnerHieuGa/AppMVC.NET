@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8ZDqwNnfo+W/hij0v4MHVfMIwQHvMz+6gveY4y/Jt6F2ZVgSj3k3Q3Dzb2LMlUPe3EvzIS0NWAJzZ9TjWEbTjg==",
+  "dgSpecHash": "Ig2Jnjv+AdRm4bBcelPbCtAFrEc4Axs8M4RD+Uh+sH4ZTCq4W3NEL1QNvRBBs3cpUZWNLS3H93hReD3Exv73xA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Hieu Hieu\\Desktop\\AppMvcNet\\AppMvcNet\\AppMvcNet.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Hieu Hieu\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512",
     "C:\\Users\\Hieu Hieu\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Hieu Hieu\\.nuget\\packages\\mailkit\\3.0.0\\mailkit.3.0.0.nupkg.sha512",
     "C:\\Users\\Hieu Hieu\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
