@@ -22,6 +22,8 @@ using Microsoft.AspNetCore.Routing.Constraints;
 using Microsoft.Extensions.Logging;
 using AppMvcNet.ExtendMethods;
 using AppMvcNet.Data;
+using Microsoft.Extensions.FileProviders;
+using System.IO;
 
 namespace AppMvcNet
 {
@@ -149,6 +151,14 @@ namespace AppMvcNet
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
+            // /contents/1.jpg => Uploads/1.jpg
+            app.UseStaticFiles(new StaticFileOptions()
+            {
+                FileProvider = new PhysicalFileProvider(
+                    Path.Combine(Directory.GetCurrentDirectory(), "Uploads")
+                ),
+                RequestPath = "/contents"
+            });
 
             app.AddStatusCodePage(); // Tuy bien Response loi: 400 - 599
 

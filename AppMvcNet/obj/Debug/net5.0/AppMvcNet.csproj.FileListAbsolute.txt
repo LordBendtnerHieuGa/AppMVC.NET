@@ -170,3 +170,14 @@ C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Areas\Blog
 C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Areas\Blog\Views\Post\Edit.cshtml.g.cs
 C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Areas\Blog\Views\Post\Index.cshtml.g.cs
 C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\bin\Debug\net5.0\Bogus.dll
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Views\Shared\_Summernote.cshtml.g.cs
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Areas\Files\Views\FileManager\Index.cshtml.g.cs
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Areas\Files\Views\Shared\_LayoutFileManager.cshtml.g.cs
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Areas\Files\Views\_ViewImports.cshtml.g.cs
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Areas\Files\Views\_ViewStart.cshtml.g.cs
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\bin\Debug\net5.0\ELFinder.Connector.dll
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\bin\Debug\net5.0\elFinder.Net.Core.dll
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\bin\Debug\net5.0\elFinder.NetCore.dll
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\bin\Debug\net5.0\ImageProcessor.dll
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\bin\Debug\net5.0\MimeTypes.dll
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\bin\Debug\net5.0\SixLabors.ImageSharp.dll

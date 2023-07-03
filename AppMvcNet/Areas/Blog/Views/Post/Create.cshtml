@@ -55,7 +55,6 @@
     <a asp-action="Index">Danh sách bài viết</a>
 </div>
 
-
 @section Scripts {
 
     <script src="~/lib/multiple-select/multiple-select.min.js"></script>
@@ -71,3 +70,9 @@
 
     <partial name="_ValidationScriptsPartial" />
 }
+
+
+@{
+    var summernote = new AppMvcNet.Models.Summernote("#Content");
+}
+<partial name="_Summernote" model="summernote" />
