@@ -181,3 +181,8 @@ C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\bin\Debug\net5.0\elFinder.NetCore
 C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\bin\Debug\net5.0\ImageProcessor.dll
 C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\bin\Debug\net5.0\MimeTypes.dll
 C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\bin\Debug\net5.0\SixLabors.ImageSharp.dll
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Areas\Blog\Views\ViewPost\Detail.cshtml.g.cs
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Areas\Blog\Views\ViewPost\Index.cshtml.g.cs
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Areas\Blog\Views\ViewPost\_LayoutBlog.cshtml.g.cs
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Areas\Blog\Views\ViewPost\_ViewStart.cshtml.g.cs
+C:\Users\Hieu Hieu\Desktop\AppMvcNet\AppMvcNet\obj\Debug\net5.0\Razor\Views\Shared\Components\CategorySidebar\Default.cshtml.g.cs

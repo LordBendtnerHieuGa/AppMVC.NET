@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace AppMvcNet.Models.Blog
 {
+
     [Table("Category")]
     public class Category
     {
@@ -14,11 +12,15 @@ namespace AppMvcNet.Models.Blog
         [Key]
         public int Id { get; set; }
 
+
+
+        // Tiều đề Category
         [Required(ErrorMessage = "Phải có tên danh mục")]
         [StringLength(100, MinimumLength = 3, ErrorMessage = "{0} dài {1} đến {2}")]
         [Display(Name = "Tên danh mục")]
         public string Title { get; set; }
 
+        // Nội dung, thông tin chi tiết về Category
         [DataType(DataType.Text)]
         [Display(Name = "Nội dung danh mục")]
         public string Description { get; set; }
@@ -30,6 +32,8 @@ namespace AppMvcNet.Models.Blog
         [Display(Name = "Url hiện thị")]
         public string Slug { set; get; }
 
+
+
         // Các Category con
         public ICollection<Category> CategoryChildren { get; set; }
 
@@ -40,6 +44,34 @@ namespace AppMvcNet.Models.Blog
         [ForeignKey("ParentCategoryId")]
         [Display(Name = "Danh mục cha")]
         public Category ParentCategory { set; get; }
+
+
+        public void ChildCategoryIDs(ICollection<Category> childcates, List<int> lists)
+        {
+            if (childcates == null)
+                childcates = this.CategoryChildren;
+
+            foreach (Category category in childcates)
+            {
+                lists.Add(category.Id);
+                ChildCategoryIDs(category.CategoryChildren, lists);
+
+            }
+        }
+
+        public List<Category> ListParents()
+        {
+            List<Category> li = new List<Category>();
+            var parent = this.ParentCategory;
+            while (parent != null)
+            {
+                li.Add(parent);
+                parent = parent.ParentCategory;
+
+            }
+            li.Reverse();
+            return li;
+        }
 
     }
 }
