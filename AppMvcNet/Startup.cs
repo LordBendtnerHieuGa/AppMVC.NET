@@ -64,7 +64,7 @@ namespace AppMvcNet
 
             });
 
-            services.AddSingleton(typeof(ProductService), typeof(ProductService));
+            //services.AddSingleton(typeof(ProductService), typeof(ProductService));
             services.AddSingleton<PlanetService>();
 
             // Dang ky Identity

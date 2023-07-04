@@ -23,7 +23,7 @@
   <ItemGroup>
     <Folder Include="Areas\Database\Data\" />
     <Folder Include="Areas\Database\Models\" />
-    <Folder Include="Areas\ProductManage\Views\Product\" />
+    <Folder Include="Uploads\Products\" />
     <Folder Include="wwwroot\planet\" />
   </ItemGroup>
 

@@ -1,21 +1,20 @@
-﻿using AppMvcNet.Areas.Blog.Models;
-using AppMvcNet.Data;
-using AppMvcNet.Models;
-using AppMvcNet.Models.Blog;
-using AppMvcNet.Utilities;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+using AppMvcNet.Models;
+using AppMvcNet.Models.Blog;
+using AppMvcNet.Data;
+using Microsoft.AspNetCore.Authorization;
+using AppMvcNet.Areas.Blog.Models;
+using Microsoft.AspNetCore.Identity;
+using AppMvcNet.Utilities;
 
-namespace AppMvcNet.Areas.Blog.Controllers
+namespace AppMvc.Areas.Blog.Controllers
 {
-
     [Area("Blog")]
     [Route("admin/blog/post/[action]/{id?}")]
     [Authorize(Roles = RoleName.Administrator + "," + RoleName.Editor)]
@@ -318,6 +317,5 @@ namespace AppMvcNet.Areas.Blog.Controllers
         {
             return _context.Posts.Any(e => e.PostId == id);
         }
-
     }
 }
