@@ -8,8 +8,9 @@ using AppMvcNet.Areas.Product.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+//using AppMvcNet.Areas.Product.Services;
 
-namespace AppMvc.Net.Areas.Product.Controllers
+namespace AppMvcNet.Areas.Product.Controllers
 {
     [Area("Product")]
     public class ViewProductController : Controller

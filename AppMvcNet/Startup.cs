@@ -41,6 +41,12 @@ namespace AppMvcNet
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDistributedMemoryCache();           // Đăng ký dịch vụ lưu cache trong bộ nhớ (Session sẽ sử dụng nó)
+            services.AddSession(cfg => {                    // Đăng ký dịch vụ Session
+                cfg.Cookie.Name = "appmvc";                 // Đặt tên Session - tên này sử dụng ở Browser (Cookie)
+                cfg.IdleTimeout = new TimeSpan(0, 30, 0);    // Thời gian tồn tại của Session
+            });
+
             services.AddDbContext<AppDbContext>(options => {
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnect"));
             });
@@ -64,6 +70,7 @@ namespace AppMvcNet
 
             });
 
+            services.AddTransient<CartService>();
             //services.AddSingleton(typeof(ProductService), typeof(ProductService));
             services.AddSingleton<PlanetService>();
 
@@ -160,6 +167,7 @@ namespace AppMvcNet
                 RequestPath = "/contents"
             });
 
+            app.UseSession();
             app.AddStatusCodePage(); // Tuy bien Response loi: 400 - 599
 
             app.UseRouting();        // EndpointRoutingMiddleware

@@ -24,7 +24,7 @@
                 </a>
                 @if (category.CategoryChildren?.Count > 0)
                 {
-                    @await Component.InvokeAsync("App.Components.CategoryProductSidebar",
+                    @await Component.InvokeAsync("AppMvcNet.Components.CategoryProductSidebar",
                         new CategoryProductSidebar.CategorySidebarData()
                         {
                             Categories = category.CategoryChildren.ToList(),
